@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int guess,attempts=3,number=5;
+    while(attempts>0)
+    {
+    printf("Enter a number between 1 to 10 : ");
+    scanf("%d",&guess);
+        if(guess<1||guess>10)
+        {
+            printf("Please enter the number between 1 to 10");
+        }
+        else if(guess==number)
+        {
+            printf("Congratulations! Your guess is correct \n");
+            break;
+        }
+        else if(guess>number)
+        {
+            printf("Wrong Guess! It's a greater number \n");
+        }
+        else
+        {
+            printf("Wrong Guess! It's a lesser number \n");
+        }
+        attempts--;
+        printf("Remaining attempts is : %d \n",attempts);
+    }
+    return 0;
+}
