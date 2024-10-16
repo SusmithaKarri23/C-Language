@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    int i,found=0;
+    char str[11]="Engineering"; 
+    char chr;
+    printf("Enter a element/alphabet :");
+    scanf("%c",&chr);
+    for(i=0;i<11;i++)
+    {
+        if(chr==str[i])
+        {
+         found=1;
+         break;
+        }
+    }
+    if(found==1)
+    {
+        printf("Element present in the string");
+    }
+    else
+    {
+        printf("Element not present in the string");
+    }
+    
+}
