@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void prime(int);
+void main()
+{
+   int num;
+   printf("Enter a number:");
+   scanf("%d",&num);
+   prime(num);
+}
+void prime(int num)
+{
+  if(num==1)
+  return;
+  int i=2;
+  while(num%i!=0)
+  {
+    i++;
+  }
+   printf("%d  ",i);
+   prime(num/i);
+}
